@@ -9,10 +9,10 @@ function App() {
   return (
     <div>
       <Navbar />
-        <Route exact path="/">
+        <Route exact path='/'>
           <Home />
         </Route>
-        <Route exact path="/login">
+        <Route exact path='/login'>
         </Route>
       <Footer />
     </div>
