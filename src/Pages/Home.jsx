@@ -17,7 +17,7 @@ const Home = () => {
   console.log(posts);
   return (
     <div className="home">
-      <h1>Home</h1>
+      <h1>Home aaaaaaaaa</h1>
         <div>
             {
               posts.map((post) => (
