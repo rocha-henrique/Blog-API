@@ -1,0 +1,16 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid green;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.red {
+  color: red;
+}
+
+.white {
+  color: white;
+}

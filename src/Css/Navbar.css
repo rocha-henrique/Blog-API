@@ -1,0 +1,11 @@
+.navbar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  background-color: grey;
+  padding: 1em;
+}
+
+span {
+  cursor: pointer;
+}
