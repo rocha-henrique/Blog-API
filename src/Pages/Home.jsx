@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Posts from "../Components/Posts";
 import '../Css/Home.css'
 import axios from "axios";
@@ -17,14 +18,14 @@ const Home = () => {
   console.log(posts);
   return (
     <div className="home">
-      <h1>Home aaaaaaaaa</h1>
-        <div>
+      <h1>Home</h1>
+        <Link to='/post'>
             {
               posts.map((post) => (
                 <Posts body={post.body} title={post.title} />
               ))
             }
-        </div>
+        </Link>
     </div>
   );
 }

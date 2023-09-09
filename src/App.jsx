@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import ClickPost from './Pages/ClickPost';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <Route exact path='/'>
           <Home />
         </Route>
-        <Route exact path='/login'>
+        <Route exact path='/post'>
+          <ClickPost />
         </Route>
       <Footer />
     </div>
