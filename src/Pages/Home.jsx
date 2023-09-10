@@ -8,7 +8,7 @@ const Home = () => {
   const [posts, setPosts] = useState([]);
   const [offset, setOffset] = useState(0);
   const apiEndPoint = 'https://jsonplaceholder.typicode.com/posts';
-  const LIMIT = 10;
+  const LIMIT = 12;
 
   useEffect(() => {
     const getPosts = async () => {
