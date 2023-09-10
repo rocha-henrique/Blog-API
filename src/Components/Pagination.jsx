@@ -1,7 +1,7 @@
 import React from "react";
 
 const MAX_ITEMS = 9;
-const MAX_LEFT =  (MAX_ITEMS - 1) / 2;
+const MAX_LEFT =  Math.max(MAX_ITEMS - 1, 0);
 
 const Pagination = ({ limit, total, offset, setOffset }) => {
   const current = offset ? (offset / limit) + 1 : 1;
@@ -14,13 +14,15 @@ const Pagination = ({ limit, total, offset, setOffset }) => {
         {Array.from({ length: MAX_ITEMS })
         .map((_, index) => index + first)
         .map((page) => (
-          <li>
-            <button 
-              onClick={() => setOffset((page - 1) * limit)}
-            >
-              {page}
-            </button>
-          </li>
+          page <= pages && (
+            <li>
+              <button 
+                onClick={() => setOffset((page - 1) * limit)}
+              >
+                {page}
+              </button>
+            </li>
+          )
         ))}
       </ul>
     </div>
