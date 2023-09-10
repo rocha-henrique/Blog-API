@@ -30,14 +30,12 @@ const Home = () => {
               ))
             }
         </div>
-        <div>
-          <Pagination 
-            limit={LIMIT}
-            total={posts.length}
-            offset={offset}
-            setOffset={setOffset}
-          />
-        </div>
+        <Pagination
+          limit={LIMIT}
+          total={posts.length}
+          offset={offset}
+          setOffset={setOffset}
+        />
     </div>
   );
 }
