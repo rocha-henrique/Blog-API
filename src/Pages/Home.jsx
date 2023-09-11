@@ -1,10 +1,17 @@
+
 import React, { useEffect, useState } from "react";
 import Pagination from "../Components/Pagination";
 import Posts from "../Components/Posts";
+
+import React, { useContext } from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import Post from "../Components/Post";
+import context from "../Context/Context";
+
 import '../Css/Home.css'
-import axios from "axios";
 
 const Home = () => {
+
   const [posts, setPosts] = useState([]);
   const [offset, setOffset] = useState(0);
   const apiEndPoint = 'https://jsonplaceholder.typicode.com/posts';
@@ -18,8 +25,6 @@ const Home = () => {
     getPosts();
   },[]);
 
-  console.log(posts);
-  console.log(posts.length);
   return (
     <div className="home">
       <h1>Home aaaaaaaaa</h1>
@@ -36,6 +41,20 @@ const Home = () => {
           offset={offset}
           setOffset={setOffset}
         />
+
+  const { posts } = useContext(context);
+
+  return (
+    <div className="home">
+      <h1>Home</h1>
+        {
+          posts.map(({ title, id, body }) => (
+            <Link to={`/posts/${id}`} key={ id } >
+              <Post body={body} title={title}/>
+            </Link>
+          ))
+        }
+
     </div>
   );
 }
