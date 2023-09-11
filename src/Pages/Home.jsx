@@ -12,8 +12,9 @@ import '../Css/Home.css'
 const Home = () => {
   const { posts } = useContext(context);
   const [offset, setOffset] = useState(0);
+
   const LIMIT = 12;
-  
+
   return (
     <div className="home">
       <Navbar />
