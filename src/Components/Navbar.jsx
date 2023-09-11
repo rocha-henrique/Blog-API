@@ -6,11 +6,6 @@ function Navbar () {
   return (
     <nav className="navbar">
       <Link to='/'> Home </Link>
-      <Link> Comments </Link>
-      <Link> Albums </Link>
-      <Link> Photos </Link>
-      <Link> Todos </Link>
-      <Link> Users </Link>
     </nav>
   );
 }
