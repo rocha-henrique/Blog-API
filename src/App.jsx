@@ -7,8 +7,12 @@ import NotFound from "./Pages/NotFound"
 function App() {
   return (
     <div>
-        <Route exact path='/' element={ <Home /> }/>
-        <Route exact path='*' element={ <NotFound />} />
+        <Route exact path='/'>
+          <Home /> 
+        </Route>
+        <Route exact path='*'>
+          <NotFound />
+        </Route>
     </div>
   );
 }
