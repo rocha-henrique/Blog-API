@@ -5,20 +5,18 @@ import Home from './Pages/Home';
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import PostPage from './Pages/PostPage';
-import NotFound from "./Pages/NotFound"
-
 
 function App() {
   return (
     <div>
+      <Navbar />
         <Route exact path='/'>
-          <Home /> 
+          <Home />
         </Route>
         <Route exact path='/posts/:id'>
           <PostPage />
-        <Route exact path='*'>
-          <NotFound />
         </Route>
+      <Footer />
     </div>
   );
 }
