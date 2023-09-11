@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import '../Css/Pagination.css';
 
-const MAX_ITEMS = 9;
+const MAX_ITEMS = 3;
 const MAX_LEFT =  Math.max(MAX_ITEMS - 1, 0);
 
 const Pagination = ({ limit, total, offset, setOffset }) => {
@@ -25,6 +25,11 @@ const Pagination = ({ limit, total, offset, setOffset }) => {
             Anterior
           </button>
         </li>
+        {startPage > 1 && (
+          <li>
+            <span>. . .</span>
+          </li>
+        )}
         {Array.from({ length: MAX_ITEMS })
         .map((_, index) => index + startPage)
         .filter((page) => page <= endPage)
@@ -42,6 +47,11 @@ const Pagination = ({ limit, total, offset, setOffset }) => {
             </button>
           </li>
         ))}
+         {endPage < pages && (
+          <li>
+            <span>. . .</span>
+          </li>
+        )}
         <li>
         <button
           onClick={() => onPageChange(current + 1)}
