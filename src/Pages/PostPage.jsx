@@ -1,24 +1,35 @@
-import React, { useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Posts from "../Components/Post";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import context from "../Context/Context";
 
-function PagePost () {
+function PagePost() {
   const { posts } = useContext(context);
+  const [findURL, setFindURL] = useState(null);
+  const [currentPathname, setCurrentPathname] = useState(window.location.pathname);
 
-  const basePostURL = window.location.pathname;
-  const numberPost = basePostURL.match(/\d+/)[0];
-  const findURL = posts.find((post) => parseInt(post.id) === parseInt(numberPost));
+  useEffect(() => {
+    setCurrentPathname(window.location.pathname);
+  }, []);
+
+  useEffect(() => {
+    const numberPost = currentPathname.match(/\d+/)[0];
+    const foundPost = posts.find((post) => parseInt(post.id) === parseInt(numberPost));
+    setFindURL(foundPost);
+  }, [currentPathname, posts]);
 
   return (
     <div>
       <Navbar />
-      <h1>Post</h1>
-      <Posts body={findURL.body} title={findURL.title} />
+      {findURL ? (
+        <Posts body={findURL.body} title={findURL.title} />
+      ) : (
+        <p>Loading...</p>
+      )}
       <Footer />
     </div>
   );
-};
+}
 
 export default PagePost;

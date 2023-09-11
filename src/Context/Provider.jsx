@@ -5,6 +5,22 @@ import axios from "axios";
 
 function Provider({ children }) {
   const [posts, setPosts] = useState([]);
+  const [searchResults, setSearchResults] = useState([]);
+
+  const handleSearch = async (searchTerm) => {
+    try {
+      const response = await axios.get(
+        `https://jsonplaceholder.typicode.com/posts?q=${searchTerm}`
+      );
+      setSearchResults(response.data);
+    } catch (error) {
+      console.error("Erro ao buscar resultados da pesquisa:", error);
+    }
+  };
+
+  const clearSearchResults = () => {
+    setSearchResults([]);
+  };
 
   const apiEndPoint = 'https://jsonplaceholder.typicode.com/posts';
   useEffect(() => {
@@ -17,7 +33,7 @@ function Provider({ children }) {
 
 
   const value = useMemo(
-    () => ({ posts, setPosts }), [posts, setPosts],
+    () => ({ posts, setPosts, searchResults, handleSearch, clearSearchResults }), [posts, setPosts, searchResults],
   );
 
     return <Context.Provider value={ value }>{ children }</Context.Provider>;

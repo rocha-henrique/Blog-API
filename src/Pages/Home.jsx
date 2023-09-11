@@ -6,6 +6,7 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Post from "../Components/Post";
 import context from "../Context/Context";
+import SearchBar from "../Components/Search";
 import '../Css/Home.css'
 
 
@@ -18,7 +19,7 @@ const Home = () => {
   return (
     <div className="home">
       <Navbar />
-      <h1>Home</h1>
+      <SearchBar />
       <div>
           {
             posts.slice(offset, offset + LIMIT).map(({ title, id, body }) => (
