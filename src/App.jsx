@@ -2,19 +2,13 @@ import React from 'react';
 import './Css/App.css';
 import { Route } from 'react-router-dom';
 import Home from './Pages/Home';
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+import NotFound from "./Pages/NotFound"
 
 function App() {
   return (
     <div>
-      <Navbar />
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route exact path='/login'>
-        </Route>
-      <Footer />
+        <Route exact path='/' element={ <Home /> }/>
+        <Route exact path='*' element={ <NotFound />} />
     </div>
   );
 }
