@@ -1,34 +1,26 @@
+import React, { useContext } from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import Post from "../Components/Post";
+import context from "../Context/Context";
 import React, { useEffect, useState } from "react";
 import Posts from "../Components/Posts";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import '../Css/Home.css'
-import axios from "axios";
 
 const Home = () => {
-  const [posts, setPosts] = useState([]);
-  const apiEndPoint = 'https://jsonplaceholder.typicode.com/posts';
-  useEffect(() => {
-    const getPosts = async () => {
-      const { data: res } = await axios.get(apiEndPoint);
-      setPosts(res);
-    };
-    getPosts();
-  },[]);
+  const { posts } = useContext(context);
 
-  console.log(posts);
   return (
     <div className="home">
-      <Navbar />
       <h1>Home</h1>
-        <div>
-            {
-              posts.map((post) => (
-                <Posts body={post.body} title={post.title} />
-              ))
-            }
-        </div>
-      <Footer />
+        {
+          posts.map(({ title, id, body }) => (
+            <Link to={`/posts/${id}`} key={ id } >
+              <Post body={body} title={title}/>
+            </Link>
+          ))
+        }
     </div>
   );
 }
