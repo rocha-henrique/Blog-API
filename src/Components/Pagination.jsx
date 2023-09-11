@@ -7,7 +7,8 @@ const MAX_LEFT =  Math.max(MAX_ITEMS - 1, 0);
 const Pagination = ({ limit, total, offset, setOffset }) => {
   const current = offset ? (offset / limit) + 1 : 1;
   const pages = Math.ceil(total / limit);
-  const first = Math.max(current - MAX_LEFT, 1);
+  const startPage = Math.max(current - MAX_LEFT, 1);
+  const endPage = Math.min(startPage + MAX_LEFT, pages);
 
   function onPageChange(page) {
     setOffset((page - 1) * limit);
@@ -25,22 +26,21 @@ const Pagination = ({ limit, total, offset, setOffset }) => {
           </button>
         </li>
         {Array.from({ length: MAX_ITEMS })
-        .map((_, index) => index + first)
+        .map((_, index) => index + startPage)
+        .filter((page) => page <= endPage)
         .map((page) => (
-          page <= pages && (
-            <li key={page}>
-              <button 
-                onClick={() => onPageChange(page)}
-                className={
-                  page === current
-                    ? 'pagination__item--active'
-                    : null
-                }
-              >
-                {page}
-              </button>
-            </li>
-          )
+          <li key={page}>
+            <button 
+              onClick={() => onPageChange(page)}
+              className={
+                page === current
+                  ? 'pagination__item--active'
+                  : null
+              }
+            >
+              {page}
+            </button>
+          </li>
         ))}
         <li>
         <button
