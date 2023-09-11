@@ -10,4 +10,7 @@ const Posts = ({body, title}) => {
   );
 };
 
+
+//Post
+
 export default Posts;
