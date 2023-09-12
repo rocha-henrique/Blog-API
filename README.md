@@ -12,7 +12,7 @@ Este é o repositório de um teste pratico de um blog pessoal. Aqui, compartilho
 
 # Instalação
 - Clone este repositório: git clone [link para clone](https://github.com/rocha-henrique/Blog-API)
-- Navegue até o diretório: cd meu-blog
+- Navegue até o diretório: cd Blog-API
 - Instale as dependências: npm install
 
 # Uso
