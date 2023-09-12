@@ -1,11 +1,30 @@
 .navbar {
   color: white;
   display: flex;
-  justify-content: baseline;
-  background-color: grey;
-  padding: 1.5em;
+  justify-content: space-between;
+  background: #6e3296;
+  padding: 1em;
 }
 
-span {
+.btn{
+  background: none;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 10px 24px;
   cursor: pointer;
+  color: #6e3296;
+}
+
+.navbar > img {
+  width: 130px;
+  object-fit: cover;
+  object-position: bottom;
+  background: transparent;
+}
+
+.container-copyright {
+  display: flex;
+  align-items: center;
+  color: white;
 }

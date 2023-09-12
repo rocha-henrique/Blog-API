@@ -1,12 +1,19 @@
 .footer {
-  color: white;
-  background-color: grey;
+  background: #6e3296;
+  justify-content: space-evenly;
   text-align: center;
-  padding: 1.5em;
+  margin-top: 10%;
   display: flex;
-  justify-content: space-evenly
 };
 
-a {
-  cursor: pointer;
+.linkedin {
+  margin: 7px;
+  font-size:22px;
+  background: transparent;
+}
+
+.github {
+  margin: 3px;
+  font-size:22px;
+  background: transparent;
 }

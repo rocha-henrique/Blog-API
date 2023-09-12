@@ -1,16 +1,13 @@
-.text {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 1em;
-  cursor: pointer;
+.heading-secondary {
+  margin-top: 4rem;
+  color: #6e3296;
 }
 
-.red {
-  color: red;
-  text-align: center;
+.heading-tertiary {
+  color: #6e3296;
 }
 
-.white {
-  color: white;
+.paragraph {
+  margin-top: 1rem;
+  font-size: large;
 }
