@@ -25,7 +25,15 @@ const SearchBar = () => {
 
   return (
     <form onSubmit={handleFormSubmit}>
-      <input type="text" name="searchTerm" value={searchTerm} onChange={handleInputChange} />
+      <input
+        type="text"
+        name="searchTerm"
+        value={searchTerm}
+        onChange={handleInputChange}
+        class="form-control"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-lg"
+      />
       <button type="submit">Pesquisar</button>
       <button type="button" onClick={handleClearSearch}>Limpar Pesquisa</button> {/* Adicione o botão de limpar pesquisa */}
 

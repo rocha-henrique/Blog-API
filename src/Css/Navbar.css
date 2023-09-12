@@ -1,11 +1,21 @@
 .navbar {
   color: white;
   display: flex;
-  justify-content: baseline;
-  background-color: grey;
-  padding: 1.5em;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(#4F78CA, #8040a9);
+  padding: 1em;
 }
 
-span {
-  cursor: pointer;
+.btn{
+  background: none;
+}
+
+.navbar > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  background: transparent;
 }

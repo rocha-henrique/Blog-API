@@ -1,12 +1,22 @@
 .footer {
-  color: white;
-  background-color: grey;
+  background: radial-gradient(#4F78CA, #8040a9);
+  justify-content: space-evenly;
   text-align: center;
-  padding: 1.5em;
+  margin-top: 33%;
   display: flex;
-  justify-content: space-evenly
+  bottom: 0;
 };
 
 a {
   cursor: pointer;
+}
+
+.linkedin {
+  font-size:22px;
+  background: transparent;
+}
+
+.github {
+  font-size:22px;
+  background: transparent;
 }

@@ -15,27 +15,24 @@ const Pagination = ({ limit, total, offset, setOffset }) => {
   }
 
   return (
-    <div>
-      <ul className='pagination'>
-        <li>
+    <nav aria-label="Page navigation example">
+      <ul className='pagination justify-content-center'>
+        <li class="page-item">
           <button
+            class="page-link"
             onClick={() => onPageChange(current - 1)}
             disabled={current === 1}
           >
             Anterior
           </button>
         </li>
-        {startPage > 1 && (
-          <li>
-            <span>. . .</span>
-          </li>
-        )}
         {Array.from({ length: MAX_ITEMS })
         .map((_, index) => index + startPage)
         .filter((page) => page <= endPage)
         .map((page) => (
-          <li key={page}>
+          <li key={page} class="page-link" href="#">
             <button 
+            class="page-link" href="#"
               onClick={() => onPageChange(page)}
               className={
                 page === current
@@ -47,13 +44,9 @@ const Pagination = ({ limit, total, offset, setOffset }) => {
             </button>
           </li>
         ))}
-         {endPage < pages && (
-          <li>
-            <span>. . .</span>
-          </li>
-        )}
         <li>
         <button
+          class="page-link" href="#"
           onClick={() => onPageChange(current + 1)}
           disabled={current === pages}
         >
@@ -61,7 +54,7 @@ const Pagination = ({ limit, total, offset, setOffset }) => {
         </button>
       </li>
       </ul>
-    </div>
+    </nav>
   )
 }
 
