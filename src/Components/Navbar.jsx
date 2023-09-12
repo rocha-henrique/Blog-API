@@ -1,6 +1,6 @@
 import React from "react";
 import '../Css/Navbar.css';
-import logo from "../images/triibo-logo.jpeg";
+import logo from "../images/triibo-logo.png";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function Navbar() {

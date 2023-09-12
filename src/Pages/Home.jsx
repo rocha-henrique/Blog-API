@@ -19,11 +19,11 @@ const Home = () => {
   return (
     <div>
       <Navbar /> 
-      <div className="home">
-        <div className="">
+      <div className="container-home">
+        <div className="container-text">
             {
               posts.slice(offset, offset + LIMIT).map(({ title, id, body }) => (
-                <Link to={`/posts/${id}`} key={ id } >
+              <Link to={`/posts/${id}`} key={ id } className="container-text">
                 <Post body={body} title={title}/>
               </Link>
               ))

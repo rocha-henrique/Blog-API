@@ -5,13 +5,13 @@ const Posts = ({body, title}) => {
   return (
       <div className="text">
         <h2 
-          className="red"
+          className="heading-secondary"
           target="_Blank"
         >
           {title}
         </h2>
         <p
-          className="white"
+          className="paragraph"
           target="_Blank"
         >
           {body}

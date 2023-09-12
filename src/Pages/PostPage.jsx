@@ -3,6 +3,7 @@ import Posts from "../Components/Post";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import context from "../Context/Context";
+import "../Css/Home.css";
 
 function PagePost() {
   const { posts } = useContext(context);
@@ -20,7 +21,7 @@ function PagePost() {
   }, [currentPathname, posts]);
 
   return (
-    <div>
+    <div >
       <Navbar />
       {findURL ? (
         <Posts body={findURL.body} title={findURL.title} />
