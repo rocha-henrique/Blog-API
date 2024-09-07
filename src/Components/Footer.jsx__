@@ -14,7 +14,6 @@ function Footer() {
 			>
 				<img className="linkedin" src={linkedin} alt="linkedin" />
 			</a>
-			<p className="container-copyright"> © Triibo todos os direitos reservados</p>
 			<a
 				href="https://github.com/rocha-henrique"
 				target="_Blank"

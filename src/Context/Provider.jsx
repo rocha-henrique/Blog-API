@@ -10,7 +10,7 @@ function Provider({ children }) {
   const handleSearch = async (searchTerm) => {
     try {
       const response = await axios.get(
-        `https://jsonplaceholder.typicode.com/posts?q=${searchTerm}`
+        `https://jsonplaceholder.typicode.com/posts?q=${searchTerm}&_limit=10`
       );
       setSearchResults(response.data);
     } catch (error) {
