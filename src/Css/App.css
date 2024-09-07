@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container-app {
+  background-color: #ede7ee;
+}
+
+.body {
+  width: 80%;
+  margin-left: 10%;
+  background-color: white;
+  box-shadow: 2px 6px 4px 3px #a899ac;
+}
