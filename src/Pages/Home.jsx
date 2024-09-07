@@ -3,7 +3,6 @@ import React, {useState, useContext } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Pagination from "../Components/Pagination";
 import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 import Post from "../Components/Post";
 import context from "../Context/Context";
 import SearchBar from "../Components/Search";
@@ -35,11 +34,10 @@ const Home = () => {
             setOffset={setOffset}
             />
         </div>
-        <div className="container-search">
-          <SearchBar />
+          <div className="container-search">
+            <SearchBar />
+          </div>
         </div>
-        </div>
-      <Footer />
     </div>
   )
 }
