@@ -1,22 +1,20 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home, PostPage } from './Pages';
 import './Css/App.css';
 
 function App() {
   return (
-    <Switch>
+    <Router basename="/Blog-API">
       <div className="container-app">
-        <body className="body">
-          <Route exact path='/' component={ Home } >
-            <Home />
-          </Route>
-          <Route exact path='/posts/:id' component={ PostPage }>
-            <PostPage />
-          </Route>
-        </body>
+        <div className="body">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/posts/:id" component={PostPage} />
+          </Switch>
+        </div>
       </div>
-    </Switch>
+    </Router>
   );
 }
 
