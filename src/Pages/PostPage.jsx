@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import Posts from "../Components/Post";
 import context from "../Context/Context";
-import "../Css/Home.css";
+import "../Css/Mobile.css";
 
 function PagePost() {
   const { posts } = useContext(context);
@@ -21,7 +21,9 @@ function PagePost() {
   return (
     <div className="container-posts">
       {findURL ? (
-        <Posts body={findURL.body} title={findURL.title} />
+        <div className="container-post">
+          <Posts body={findURL.body} title={findURL.title} />
+        </div>
       ) : (
         <p>Loading...</p>
       )}

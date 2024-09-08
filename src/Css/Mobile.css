@@ -1,0 +1,99 @@
+@media (max-width: 768px) {
+  /* Container de Posts */
+  .container-posts {
+    width: 95%;
+    padding: 1rem;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    box-shadow: 1px 5px 4px 2px #a899ac;
+  }
+
+  /* Estilo para cada Post */
+  .container-post {
+    width: 100%; /* Ocupa toda a largura */
+  }
+
+  /* Títulos */
+  .heading-secondary {
+    margin-top: 2vh;
+    font-size: 1.2rem; /* Reduzido para telas menores */
+  }
+
+  .heading-tertiary {
+    margin-top: 1vh;
+    font-size: 1rem;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
+
+  /* Paginação */
+  .pagination {
+    margin: 1rem;
+  }
+
+  .pagination button {
+    padding: 0.4rem 0.6rem; /* Botões menores para toque */
+  }
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    padding: 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.2rem;
+    padding: 10px 5px;
+  }
+
+  /* Container da Página Inicial */
+  .container-home {
+    width: 95%; /* Ocupa quase toda a largura da tela */
+    padding: 1rem;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+
+  .container-text {
+    width: 100%; /* Adapta o texto à largura do container */
+  }
+
+  /* Mini Post */
+  .container-miniPost {
+    flex-direction: column; /* Empilha o conteúdo verticalmente */
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* Barra de Pesquisa */
+  .container-search {
+    width: 95%; /* Ocupa quase toda a largura da tela */
+    margin-top: 1rem;
+  }
+
+  .container-input {
+    width: 100%; /* Largura completa do input */
+  }
+
+  .btn-clear, .btn-search {
+    width: 100%; /* Botões ocupam toda a largura */
+    margin: 0.5rem 0;
+  }
+
+  /* Rodapé */
+  .footer {
+    flex-direction: column; /* Elementos empilhados */
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .linkedin, .github {
+    margin-top: 1rem;
+  }
+
+  .container-copyright {
+    font-size: 0.9rem;
+  }
+}
