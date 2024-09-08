@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import Posts from "../Components/Post";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import context from "../Context/Context";
 import "../Css/Home.css";
 
@@ -27,6 +28,7 @@ function PagePost() {
       ) : (
         <p>Loading...</p>
       )}
+      <Footer />
     </div>
   );
 }

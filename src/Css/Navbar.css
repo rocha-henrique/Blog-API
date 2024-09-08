@@ -1,15 +1,43 @@
 .navbar {
   color: white;
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
+=======
+  justify-content: space-between;
+>>>>>>> main
   background: #6e3296;
   padding: 1em;
 }
 
+<<<<<<< HEAD
 .navbar-logo {
   color: white;
   font-size: 70px;
   border-radius: 8px;
   padding: 10px 10px;
   cursor: pointer;
+=======
+.btn{
+  background: none;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 10px 24px;
+  cursor: pointer;
+  color: #6e3296;
+}
+
+.navbar > img {
+  width: 130px;
+  object-fit: cover;
+  object-position: bottom;
+  background: transparent;
+}
+
+.container-copyright {
+  display: flex;
+  align-items: center;
+  color: white;
+>>>>>>> main
 }
