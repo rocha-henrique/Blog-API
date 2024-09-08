@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Blog-API/static/css/main.0eb70049.css",
+    "main.js": "/Blog-API/static/js/main.ea4b5824.js",
+    "static/js/787.79ec90f5.chunk.js": "/Blog-API/static/js/787.79ec90f5.chunk.js",
+    "static/media/triibo-logo.png": "/Blog-API/static/media/triibo-logo.147180eed6961c6c8d72.png",
+    "index.html": "/Blog-API/index.html",
+    "main.0eb70049.css.map": "/Blog-API/static/css/main.0eb70049.css.map",
+    "main.ea4b5824.js.map": "/Blog-API/static/js/main.ea4b5824.js.map",
+    "787.79ec90f5.chunk.js.map": "/Blog-API/static/js/787.79ec90f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0eb70049.css",
+    "static/js/main.ea4b5824.js"
+  ]
+}
