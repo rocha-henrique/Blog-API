@@ -5,7 +5,7 @@ Este projeto é um blog desenvolvido como parte de um teste técnico para uma va
 
 # Funcionalidades
 
-- Exibição de posts em três telas, com limite de 10 posts por tela.
+- Exibição de posts mais de cinco telas, com limite de 10 posts por tela.
 
 - Funcionalidade de pesquisa para filtrar os posts.
 
