@@ -1,23 +1,19 @@
 .navbar {
   color: white;
   display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-=======
   justify-content: space-between;
->>>>>>> main
   background: #6e3296;
   padding: 1em;
 }
 
-<<<<<<< HEAD
 .navbar-logo {
   color: white;
   font-size: 70px;
   border-radius: 8px;
   padding: 10px 10px;
   cursor: pointer;
-=======
+}
+
 .btn{
   background: none;
   background-color: white;
@@ -39,5 +35,4 @@
   display: flex;
   align-items: center;
   color: white;
->>>>>>> main
 }
