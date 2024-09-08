@@ -1,19 +1,25 @@
 .footer {
-  background: #6e3296;
-  justify-content: space-evenly;
-  text-align: center;
-  margin-top: 10%;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  height: 10vh;
+  background: #6e3296;
+  width: 100%;
 };
 
 .linkedin {
-  margin: 7px;
-  font-size:22px;
   background: transparent;
 }
 
 .github {
-  margin: 3px;
-  font-size:22px;
+  height: 9vh;
   background: transparent;
+}
+
+.container-copyright {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  color: white;
 }

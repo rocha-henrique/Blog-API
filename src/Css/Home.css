@@ -1,42 +1,41 @@
 .container-home {
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  background-color: white;
+  width: 130vh;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  box-shadow: 1px 9px 6px 5px #a899ac;
 }
 
 .container-text {
   margin-right: 4rem; 
-  width: 40rem;
+  width: 60vh;
   font-size: medium;
-}
-
-.container-search {
-  display: flex;
-  flex-direction: row;
-  width: 30%;
-}
-
-.container-text {
   text-decoration: none;
   color: black;
 }
 
-.container-input {
-  margin-top: 4rem;
-  width: 100%;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  resize: none;
-  height: 3rem;
-  border-radius: 10px;
-  box-shadow: 3px 2px 4px 2px #a899ac;
+.container-miniPost {
+  display: flex;
+  width: 49vh;
+  margin-top: 2rem;
 }
 
-.container-test {
+.container-search {
+  width: 50vh;
   display: flex;
-  width: 20rem;
-  margin-top: 2rem;
+  background-color: white;
+}
+
+.container-input {
+  margin-top: 9vh;
+  width: 50vh;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 4px 2px 3px 1px #a899ac;
+  border: solid rebeccapurple 2.5px;
 }
 
 .btn-clear {

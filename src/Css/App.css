@@ -2,18 +2,10 @@
   margin: 0;
   padding: 0;
   border: 0;
-  text-decoration: none;
 }
 
 .container-app {
   background-color: #ede7ee;
-}
-
-.body {
-  width: 80%;
-  height: 100%;
-  min-height: 100%;
-  margin-left: 10%;
-  background-color: white;
-  box-shadow: 2px 6px 4px 3px #a899ac;
+  display: flex;
+  justify-content: center;
 }

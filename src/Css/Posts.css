@@ -1,3 +1,16 @@
+.container-posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 85vh;
+  width: 130vh;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  background-color: white;
+  box-shadow: 1px 9px 6px 5px #a899ac;
+}
+
 .heading-secondary {
   margin-top: 4rem;
   color: #6e3296;

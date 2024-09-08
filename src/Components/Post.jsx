@@ -3,7 +3,7 @@ import '../Css/Posts.css';
 
 const Posts = ({body, title}) => {
   return (
-      <div className="text">
+      <div>
         <h2 
           className="heading-secondary"
           target="_Blank"

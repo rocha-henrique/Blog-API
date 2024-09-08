@@ -38,7 +38,7 @@ const SearchBar = () => {
       <button type="button" onClick={handleClearSearch} className="btn-search">Limpar Pesquisa</button> {/* Adicione o botão de limpar pesquisa */}
 
       {searchResults.map((post) => (
-        <div key={post.id} className="container-test">
+        <div key={post.id} className="container-miniPost">
           <Link to={`/posts/${post.id}`} className="container-text">
             <h3 className='heading-tertiary'>{post.title}</h3>
             <p className='paragraph'>{post.body}</p>

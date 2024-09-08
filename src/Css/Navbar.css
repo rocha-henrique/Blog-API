@@ -1,38 +1,16 @@
 .navbar {
-  color: white;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
   background: #6e3296;
-  padding: 1em;
 }
 
 .navbar-logo {
   color: white;
-  font-size: 70px;
-  border-radius: 8px;
+  font-size: x-large;
   padding: 10px 10px;
+  text-decoration: none;
+  color: inherit;
   cursor: pointer;
-}
-
-.btn{
-  background: none;
-  background-color: white;
-  border-radius: 8px;
-  font-size: 20px;
-  padding: 10px 24px;
-  cursor: pointer;
-  color: #6e3296;
-}
-
-.navbar > img {
-  width: 130px;
-  object-fit: cover;
-  object-position: bottom;
-  background: transparent;
-}
-
-.container-copyright {
-  display: flex;
-  align-items: center;
-  color: white;
 }
