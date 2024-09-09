@@ -1,58 +1,102 @@
-.container-home {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  width: 130vh;
-  margin-bottom: 2vh;
-  margin-top: 2vh;
-  box-shadow: 1px 9px 6px 5px #a899ac;
+@media (min-width: 429px) {
+  .container-home {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 130vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    box-shadow: 1px 9px 6px 5px #a899ac;
+  }
+
+  .container-text {
+    margin-right: 4rem; 
+    width: 60vh;
+    font-size: medium;
+    text-decoration: none;
+    color: black;
+  }
+
+  .container-miniPost {
+    display: flex;
+    width: 49vh;
+    margin-top: 2rem;
+  }
+
+  .container-search {
+    width: 52vh;
+    display: flex;
+    background-color: white;
+  }
+
+  .container-input {
+    margin-top: 9vh;
+    width: 50vh;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 4px 2px 3px 1px #a899ac;
+    border: solid rebeccapurple 2.5px;
+  }
+
+  .btn-clear {
+    background-color: #6e3296;
+    border-radius: 80px;
+    cursor: pointer;
+    padding: 10px 24px;
+    color: white;
+  }
+
+  .btn-search {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    background-color: #6e3296;
+    border-radius: 80px;
+    cursor: pointer;
+    padding: 10px 24px;
+    color: white;
+  }
 }
 
-.container-text {
-  margin-right: 4rem; 
-  width: 60vh;
-  font-size: medium;
-  text-decoration: none;
-  color: black;
-}
+@media (max-width: 428px) and (max-height: 800px) {
+  .container-miniPost {
+    display: flex;
+    width: 49vh;
+    margin-top: 2rem;
+  }
 
-.container-miniPost {
-  display: flex;
-  width: 49vh;
-  margin-top: 2rem;
-}
+  .container-search {
+    display: none;
+  }
 
-.container-search {
-  width: 50vh;
-  display: flex;
-  background-color: white;
-}
+  /* codigo ocultado pois não vejo motivo de deixar pesquisa no celular */
 
-.container-input {
-  margin-top: 9vh;
-  width: 50vh;
-  padding: 12px 15px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  box-shadow: 4px 2px 3px 1px #a899ac;
-  border: solid rebeccapurple 2.5px;
-}
+  /* .container-input {
+    margin-top: 9vh;
+    width: 9rem;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border-radius: 0.9rem;
+    box-shadow: 4px 2px 3px 1px #a899ac;
+    border: solid rebeccapurple 2.5px;
+  }
 
-.btn-clear {
-  margin-left: 1.5rem;
-  background-color: #6e3296;
-  border-radius: 80px;
-  cursor: pointer;
-  padding: 10px 24px;
-  color: white;
-}
+  .btn-clear {
+    margin-top: 0.5rem;
+    background-color: #6e3296;
+    font-size: 0.7rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    padding: 0.5rem 0.1rem;
+    color: white;
+  }
 
-.btn-search {
-  margin-top: 2rem;
-  margin-left: 1.5rem;
-  background-color: #6e3296;
-  border-radius: 80px;
-  cursor: pointer;
-  padding: 10px 24px;
-  color: white;
+  .btn-search {
+    margin-top: 0.5rem;
+    background-color: #6e3296;
+    border-radius: 3rem;
+    cursor: pointer;
+    padding: 0.9rem 0.4rem;
+    color: white;
+  } */
 }

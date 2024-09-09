@@ -15,7 +15,7 @@ function App() {
           <Route exact path="/posts/:id" component={PostPage} />
         </Switch>
       </div>
-      <Footer />
+        <Footer />
     </Router>
   );
 }

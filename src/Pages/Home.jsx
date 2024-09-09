@@ -14,26 +14,24 @@ const Home = () => {
   const LIMIT = 12;
 
   return (
-    <div>
-      <div className="container-home">
-        <div className="container-text">
-            {
-              posts.slice(offset, offset + LIMIT).map(({ title, id, body }) => (
-              <Link to={`/posts/${id}`} key={ id } className="container-text">
-                <Post body={body} title={title}/>
-              </Link>
-              ))
-            }
-          <Pagination
-            limit={LIMIT}
-            total={posts.length}
-            offset={offset}
-            setOffset={setOffset}
-            />
-        </div>
-        <div className="container-search">
-          <SearchBar />
-        </div>
+    <div className="container-home">
+      <div className="container-text">
+          {
+            posts.slice(offset, offset + LIMIT).map(({ title, id, body }) => (
+            <div className="container-post"><Link to={`/posts/${id}`} key={ id } className="container-text">
+              <Post body={body} title={title}/>
+            </Link> </div>
+            ))
+          }
+        <Pagination
+          limit={LIMIT}
+          total={posts.length}
+          offset={offset}
+          setOffset={setOffset}
+          />
+      </div>
+      <div className="container-search">
+        <SearchBar />
       </div>
     </div>
   )

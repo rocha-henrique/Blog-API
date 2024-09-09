@@ -34,8 +34,8 @@ const SearchBar = () => {
         onChange={handleInputChange}
         class="container-input"
       />
-      <button type="submit" className="btn-clear">Pesquisar</button>
-      <button type="button" onClick={handleClearSearch} className="btn-search">Limpar Pesquisa</button> {/* Adicione o botão de limpar pesquisa */}
+      <button type="submit" className="btn-search">Pesquisar</button>
+      <button type="button" onClick={handleClearSearch} className="btn-clear">Limpar Pesquisa</button> {/* Adicione o botão de limpar pesquisa */}
 
       {searchResults.map((post) => (
         <div key={post.id} className="container-miniPost">

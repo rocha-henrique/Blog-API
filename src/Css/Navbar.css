@@ -1,16 +1,38 @@
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: white;
-  background: #6e3296;
+@media (min-width: 429px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background: #6e3296;
+  }
+
+  .navbar-logo {
+    color: white;
+    font-size: x-large;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
 }
 
-.navbar-logo {
-  color: white;
-  font-size: x-large;
-  padding: 10px 10px;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+@media (max-width: 428px) and (max-height: 800px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background: #6e3296;
+  }
+  
+  .navbar-logo {
+    color: white;
+    font-size: large;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
 }

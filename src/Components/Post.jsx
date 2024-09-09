@@ -3,7 +3,7 @@ import '../Css/Posts.css';
 
 const Posts = ({body, title}) => {
   return (
-      <div>
+      <div className="container-unicPost">
         <h2 
           className="heading-secondary"
           target="_Blank"
@@ -11,7 +11,7 @@ const Posts = ({body, title}) => {
           {title}
         </h2>
         <p
-          className="paragraph"
+          className="paragraph-secondary"
           target="_Blank"
         >
           {body}

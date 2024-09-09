@@ -12,8 +12,9 @@ function Footer() {
 				rel="noreferrer"
 			>
 				<img className="github" src={linkedin} alt="linkedin" />
-			</a>		
-			<p className="container-copyright"> © Blog-API todos os direitos reservados</p>
+			</a>
+
+			<span className="copyright"> © Blog-API todos os direitos reservados</span>
 			
 			<a
 				href="https://github.com/rocha-henrique"
