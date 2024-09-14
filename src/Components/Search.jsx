@@ -40,8 +40,8 @@ const SearchBar = () => {
       {searchResults.map((post) => (
         <div key={post.id} className="container-miniPost">
           <Link to={`/posts/${post.id}`} className="container-text">
-            <h3 className='heading-tertiary'>{post.title}</h3>
-            <p className='paragraph'>{post.body}</p>
+            <h3 className='heading-secondary'>{post.title.toUpperCase()}</h3>
+            <p className='paragraph-secondary'>{post.body}</p>
           </Link>
         </div>
       ))}

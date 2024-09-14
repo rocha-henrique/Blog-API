@@ -5,13 +5,13 @@ const Posts = ({body, title}) => {
   return (
       <div className="container-unicPost">
         <h2 
-          className="heading-secondary"
+          className="heading"
           target="_Blank"
         >
-          {title}
+          {title.toUpperCase()}
         </h2>
         <p
-          className="paragraph-secondary"
+          className="paragraph"
           target="_Blank"
         >
           {body}

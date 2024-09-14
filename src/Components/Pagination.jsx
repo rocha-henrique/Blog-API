@@ -16,7 +16,7 @@ const Pagination = ({ limit, total, offset, setOffset }) => {
 
   return (
     <nav aria-label="Page navigation example">
-      <ul className='pagination justify-content-center'>
+      <ul className='pagination'>
         <li class="page-item">
           <button
             class="page-link"
@@ -32,7 +32,8 @@ const Pagination = ({ limit, total, offset, setOffset }) => {
         .map((page) => (
           <li key={page} class="page-link" href="#">
             <button 
-            class="page-link" href="#"
+              href="#"
+              class="page-link" 
               onClick={() => onPageChange(page)}
               className={
                 page === current

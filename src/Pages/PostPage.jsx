@@ -19,14 +19,16 @@ function PagePost() {
   }, [currentPathname, posts]);
 
   return (
-    <div className="container-posts">
-      {findURL ? (
-        <div className="container-post">
-          <Posts body={findURL.body} title={findURL.title} />
-        </div>
-      ) : (
-        <p>Loading...</p>
-      )}
+    <div>
+      <div className="container-posts">
+        {findURL ? (
+          <div className="container-post">
+            <Posts body={findURL.body} title={findURL.title} />
+          </div>
+        ) : (
+          <p>Loading...</p>
+        )}
+      </div>
     </div>
   );
 }

@@ -18,7 +18,7 @@ const Home = () => {
       <div className="container-text">
           {
             posts.slice(offset, offset + LIMIT).map(({ title, id, body }) => (
-            <div className="container-post"><Link to={`/posts/${id}`} key={ id } className="container-text">
+              <div className="container-post"><Link to={`/posts/${id}`} key={ id } className="container-text">
               <Post body={body} title={title}/>
             </Link> </div>
             ))
